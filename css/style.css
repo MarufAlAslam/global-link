@@ -50,6 +50,9 @@
 .fs-25{
     font-size: 25px;
 }
+.fs-28{
+    font-size: 28px;
+}
 .fs-30{
     font-size: 30px;
 }
@@ -98,19 +101,45 @@
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 95%;
+	padding-bottom: 300px !important;
 }
 .btn.btn-primary.shadow.bold.fs-25.text-uppercase.rounded {
 	border-top: 3px solid #73E9F8;
-	background-color: #38C4D4 !important;
+	/* background-color: #38C4D4 !important; */
 	border-right: #73E9F8;
 	border-left: #73E9F8;
 	box-shadow: 0 0 10px 0px rgba(0,0,0,0.3) !important;
 	border-right: 1px solid #73E9F8;
+	background: linear-gradient(-170deg,#42D6E8,#33BCCC);
+}
+.card.bg-transparent.border-0.position-relative .card-body {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner .btn {
+	position: relative;
+	left: -30px;
+}
+.btn:focus{
+    outline: unset !important;
+    box-shadow: unset !important;
 }
 .container {
 	max-width: 85%;
 }
-
+.col-lg-3.col-md-4.py-2.pe-4 {
+	padding-right: 35px !important;
+}
+.col-lg-8.col-md-7.ps-4 {
+	padding-left: 35px !important;
+}
 
 
 
@@ -148,13 +177,16 @@
 	border-right: 1px solid grey !important;
 }
 
-.logos {
+/* .logos {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
+} */
 .logos img {
 	height: 35px;
+}
+.logos img {
+	margin: 10px;
 }
 .logos.us {
 	display: unset !important;
@@ -166,6 +198,9 @@
 .text-dark{
     color: black !important;
 }
+.mobileImg{
+    display: none;
+}
 /* main section */
 
 
@@ -173,6 +208,7 @@
 @media screen and (max-width:992px){
     .banner {
         background-position: bottom;
+        padding-bottom: 40px !important;
     }
     .banner .col-lg-6 {
         padding: 30px 0;
@@ -190,6 +226,15 @@
 }
 
 @media screen and (max-width:767px){
+    .desktopImg{
+        display: none;
+    }
+    .mobileImg{
+        display: block !important;
+    }
+    .container {
+        max-width: 100%;
+    }
     .col-lg-6.bannerCardImg img {
         max-width: 75%;
         margin-top: 45px;
@@ -217,7 +262,17 @@
         text-align: center;
     }
     .banner {
+        background-position: top;
         padding: 50px 10px;
+    }
+    .banner .row.mt-100 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:576px){
+    .global.bg-info.py-4 {
+        padding: 30px !important;
     }
 }
 
