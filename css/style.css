@@ -1,0 +1,232 @@
+/* =================================================== */
+/* =================fonts============================= */
+/* =================================================== */
+@font-face {
+    font-family: 'mont-regular';
+    src: url('../fonts/Mont-Regular.otf');
+}
+
+@font-face {
+    font-family: 'mont-bold';
+    src: url('../fonts/Mont-Bold.otf');
+}
+@font-face {
+    font-family: 'mont-black';
+    src: url('../fonts/Mont-Black.otf');
+}
+
+@font-face {
+    font-family: 'mont-heavy';
+    src: url('../fonts/Mont-Heavy.otf');
+}
+
+*{
+    font-family: 'mont-regular';
+}
+.bold{
+    font-family: 'mont-bold';
+}
+.black{
+    font-family: 'mont-black';
+}
+.heavy{
+    font-family: 'mont-heavy';
+}
+
+
+/* font sizes */
+.fs-12{
+    font-size: 12px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.fs-35{
+    font-size: 35px;
+}
+.fs-50 {
+	font-size: 50px;
+}
+.fs-55{
+    font-size: 55px;
+}
+
+
+
+/* =================================================== */
+/* =================styling starts from here============================= */
+/* =================================================== */
+
+
+
+/* banner */
+.banner{
+    background-color: #309FE7;
+    padding: 120px 0;
+}
+.img-fluid.logo {
+	width: 300px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+
+
+.btn-primary {
+	background: #34BECE;
+	border-color: #34BECE;
+	border-radius: 20px !important;
+	padding: 10px 30px;
+	margin-top: 20px;
+}
+.banner {
+	background-color: #309FE7;
+	padding: 120px 0;
+	background-image: url("../img/shapeBg.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 95%;
+}
+.btn.btn-primary.shadow.bold.fs-25.text-uppercase.rounded {
+	border-top: 3px solid #73E9F8;
+	background-color: #38C4D4 !important;
+	border-right: #73E9F8;
+	border-left: #73E9F8;
+	box-shadow: 0 0 10px 0px rgba(0,0,0,0.3) !important;
+	border-right: 1px solid #73E9F8;
+}
+.container {
+	max-width: 85%;
+}
+
+
+
+
+/* bg info */
+.bg-info {
+	background-color: #43D6E8;
+}
+.bg-info.py-4{
+    padding: 30px 0 !important;
+}
+
+
+
+
+/* main section */
+.container-fluid {
+	max-width: 97%;
+    margin: auto !important;
+}
+.col-lg-3.col-md-4.py-2 {
+	border-right: 1px solid #788B93;
+}
+.text-primary{
+    color: #0B53A6 !important;
+}
+.img-fluid.iconImg {
+	width: 90px;
+	position: relative;
+	top: -15px;
+}
+.text-grey{
+    color: #A8ABAE !important;
+}
+.col-md-8.border-right {
+	border-right: 1px solid grey !important;
+}
+
+.logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logos img {
+	height: 35px;
+}
+.logos.us {
+	display: unset !important;
+}
+.logos.us img {
+	margin: 10px;
+	padding: 3px;
+}
+.text-dark{
+    color: black !important;
+}
+/* main section */
+
+
+/* responsiveness */
+@media screen and (max-width:992px){
+    .banner {
+        background-position: bottom;
+    }
+    .banner .col-lg-6 {
+        padding: 30px 0;
+    }
+    .logos {
+        display: unset;
+    }
+    .logos img {
+        height: 35px;
+        margin: 10px;
+    }
+    .global.bg-info.py-4 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .col-lg-6.bannerCardImg img {
+        max-width: 75%;
+        margin-top: 45px;
+    }
+    .mainSection.py-5 .fs-50 {
+        font-size: 30px;
+    }
+    .mainSection.py-5 .fs-35 {
+        font-size: 18px;
+    }
+    .footer.bg-info.py-4 .col-md-6 {
+        text-align: center !important;
+    }
+    .col-lg-3.col-md-4.py-2.pe-4 {
+        padding-right: 12px !important;
+        border: unset;
+    }
+    .col-lg-8.col-md-7.ps-4 {
+        padding-left: 12px !important;
+    }
+    .col-md-8.border-right {
+        border: unset !important;
+    }
+    .col-lg-6.bannerCardImg {
+        text-align: center;
+    }
+    .banner {
+        padding: 50px 10px;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .banner .text-white.heavy.fs-55 {
+        font-size: 35px;
+    }
+    .banner .text-white.bold.fs-35 {
+        font-size: 20px;
+    }
+}
